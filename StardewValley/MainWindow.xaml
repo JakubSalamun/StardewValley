@@ -17,7 +17,7 @@
         <Button x:Name="TV" Click="TV_Click" Margin="55,133,585,255" BorderBrush="DarkGreen" BorderThickness="4">
             <Image Source="/images/TV_icon.png" />
         </Button>
-        <Button x:Name="Bed"  Margin="587,264,54,69"  BorderBrush="DarkGreen" BorderThickness="4" Click="Bed_Click" >
+        <Button x:Name="Bed" Click="Bed_Click"  Margin="587,264,54,69"  BorderBrush="DarkGreen" BorderThickness="4">
            <Image Source="/images/Bed.png" />
 
 

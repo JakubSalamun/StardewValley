@@ -1,0 +1,76 @@
+﻿<Window x:Class="StardewValley.CalendarWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:StardewValley"
+        mc:Ignorable="d"
+        Title="CalendarWindow" Height="450" Width="800" Closing="Window_Closing">
+    <Grid>
+        <StackPanel>
+
+
+            <StackPanel>
+                <StackPanel.Resources>
+                    <Style TargetType="Label">
+                        <Setter Property="BorderBrush" Value="Black"></Setter>
+                        <Setter Property="Width" Value="100"></Setter>
+                        <Setter Property="HorizontalContentAlignment" Value="Center"></Setter>
+                    </Style>
+                </StackPanel.Resources>
+                <Label  HorizontalContentAlignment="Center">Spring</Label>
+                <WrapPanel Height="25" Width="700" VerticalAlignment="Top" >
+                    <Label  BorderThickness="1,1,0,0">M</Label>
+                    <Label  BorderThickness="0,1,0,0">T</Label>
+                    <Label  BorderThickness="0,1,0,0">W</Label>
+                    <Label  BorderThickness="0,1,0,0">Th</Label>
+                    <Label  BorderThickness="0,1,0,0">F</Label>
+                    <Label  BorderThickness="0,1,0,0">Sa</Label>
+                    <Label  BorderThickness="0,1,1,0">Su</Label>
+                </WrapPanel>
+            </StackPanel>
+
+            <WrapPanel Height="280" Width="700" VerticalAlignment="Bottom" >
+                <WrapPanel.Resources>
+                    <Style TargetType="Label">
+                        <Setter Property="FontSize" Value="36"></Setter>
+                        <Setter Property="HorizontalContentAlignment" Value="Center"></Setter>
+                        <Setter Property="BorderBrush" Value="Black"></Setter>
+                        <Setter Property="BorderThickness" Value="1"></Setter>
+                        <Setter Property="Width" Value="100"></Setter>
+                        <Setter Property="Height" Value="70"></Setter>
+
+                    </Style>
+                </WrapPanel.Resources>
+                <Label x:Name="Label1">1</Label>
+                <Label x:Name="Label2">2</Label>
+                <Label x:Name="Label3">3</Label>
+                <Label x:Name="Label4">4</Label>
+                <Label x:Name="Label5">5</Label>
+                <Label x:Name="Label6">6</Label>
+                <Label x:Name="Label7">7</Label>
+                <Label x:Name="Label8">8</Label>
+                <Label x:Name="Label9">9</Label>
+                <Label x:Name="Label10">10</Label>
+                <Label x:Name="Label11">11</Label>
+                <Label x:Name="Label12">12</Label>
+                <Label x:Name="Label13">13</Label>
+                <Label x:Name="Label14">14</Label>
+                <Label x:Name="Label15">15</Label>
+                <Label x:Name="Label16">16</Label>
+                <Label x:Name="Label17">17</Label>
+                <Label x:Name="Label18">18</Label>
+                <Label x:Name="Label19">19</Label>
+                <Label x:Name="Label20">20</Label>
+                <Label x:Name="Label21">21</Label>
+                <Label x:Name="Label22">22</Label>
+                <Label x:Name="Label23">23</Label>
+                <Label x:Name="Label24">24</Label>
+                <Label x:Name="Label25">25</Label>
+                <Label x:Name="Label26">26</Label>
+                <Label x:Name="Label27">27</Label>
+                <Label x:Name="Label28">28</Label>
+            </WrapPanel>
+        </StackPanel>
+    </Grid>
+</Window>
