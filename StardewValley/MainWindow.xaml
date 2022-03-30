@@ -5,20 +5,24 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:StardewValley"
         mc:Ignorable="d"
-        Title="MainWindow" Height="600" Width="800">
+        Title="MainWindow" Height="600" Width="800" Closing="Window_Closing">
     <Window.Background>
         <ImageBrush ImageSource="/images/Room.png" />
     </Window.Background>
     <Grid>
-        <Button x:Name="Calendar" Click="Calendar_Click" Margin="455,57,260,424" BorderBrush="DarkGreen" BorderThickness="4">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="701*"/>
+            <ColumnDefinition Width="99*"/>
+        </Grid.ColumnDefinitions>
+        <Button x:Name="Calendar" Click="Calendar_Click" Margin="455,57,161,424" BorderBrush="DarkGreen" BorderThickness="4">
             <Image Source="/images/Calendar_icon.png" />
-           
+
         </Button>
-        <Button x:Name="TV" Click="TV_Click" Margin="55,133,585,255" BorderBrush="DarkGreen" BorderThickness="4">
+        <Button x:Name="TV" Click="TV_Click" Margin="55,133,486,255" BorderBrush="DarkGreen" BorderThickness="4">
             <Image Source="/images/TV_icon.png" />
         </Button>
-        <Button x:Name="Bed" Click="Bed_Click"  Margin="587,264,54,69"  BorderBrush="DarkGreen" BorderThickness="4">
-           <Image Source="/images/Bed.png" />
+        <Button x:Name="Bed" Click="Bed_Click"  Margin="587,264,54,69"  BorderBrush="DarkGreen" BorderThickness="4" Grid.ColumnSpan="2">
+            <Image Source="/images/Bed.png" />
 
 
         </Button>
