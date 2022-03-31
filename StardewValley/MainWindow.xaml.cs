@@ -23,11 +23,13 @@ namespace StardewValley
     public partial class MainWindow : Window
     {
         CalendarWindow calendar = new CalendarWindow();
-       
+
 
         public MainWindow()
         {
             InitializeComponent();
+      
+            
         }
 
         private void TV_Click(object sender, RoutedEventArgs e)
@@ -50,6 +52,10 @@ namespace StardewValley
                 {
                     item.Background = Brushes.Green;
                 }
+                if (Convert.ToInt32(item.Content)> help.seasonsDay)
+                {
+                    item.Background = Brushes.White;
+                }
             }           
             calendar.ShowDialog();
         }
@@ -67,8 +73,10 @@ namespace StardewValley
 
         private void HelpCurentDay(int help)
         {
-
-            string seasonsTime_Contetnt= calendar.SeasonsTime.Content.ToString();
+       
+            string seasonsTime_Contetnt = calendar.SeasonsTime.Content.ToString();
+            
+ 
             switch (help)
             {
                 case 1:
@@ -184,8 +192,9 @@ namespace StardewValley
                 case 28:
                     //ustawic Binding na calendar.SeasonsTime.Content by zmieniało Content 
                     //po kliknięciu na łóżko w dniu 28 ma zmienić pore sezonową i ustawić HelpCurentDay na 1 w nowym sezonie.
-                    calendar.labelList.Clear();
-                    calendar.SeasonsTime.Content = "Summer";
+                    //
+
+                   
                     HelpSerialize(Convert.ToInt32(calendar.Label1.Content), seasonsTime_Contetnt);
                     break;
 

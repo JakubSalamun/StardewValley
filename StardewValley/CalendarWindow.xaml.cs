@@ -20,9 +20,14 @@ namespace StardewValley
     public partial class CalendarWindow : Window
     {
         public List<Label> labelList = new List<Label>();
+
+
         public CalendarWindow()
         {
+        
             InitializeComponent();
+
+
             labelList.Add(Label1);
             labelList.Add(Label2);
             labelList.Add(Label3);
