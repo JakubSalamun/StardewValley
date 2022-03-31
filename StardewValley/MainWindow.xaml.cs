@@ -41,6 +41,8 @@ namespace StardewValley
             //problem :musimy zapisać JSON z listą ,by po wczytaniu calendar.labelList posiadało elementy
             //oczekiwany efekt: dodanie do listy z poziomu CalendarWindow 
             //do edycji D:\JSON\DayofSesons.json by zmienic dzień (nie ujete w planie)
+            //*************************
+            //zamiast 
             var help = HelpDeserialize();
 
             foreach (var item in calendar.labelList)
@@ -56,7 +58,9 @@ namespace StardewValley
         private void Bed_Click(object sender, RoutedEventArgs e)
         {
             var help= HelpDeserialize();
-            MessageBox.Show(calendar.labelList.Last().Content.ToString());
+            var _curentDay = help;
+            _curentDay += 1;
+            MessageBox.Show("Nastał dzień: "+_curentDay.ToString());
 
             HelpCurentDay(help);
         }
@@ -123,9 +127,9 @@ namespace StardewValley
                     HelpSerialize(Convert.ToInt32(calendar.Label15.Content));
                     break;
                 case 15:                 
-                        calendar.labelList.Add(calendar.Label16);
-                        HelpSerialize(Convert.ToInt32(calendar.Label16.Content));
-                        break;
+                    calendar.labelList.Add(calendar.Label16);
+                    HelpSerialize(Convert.ToInt32(calendar.Label16.Content));
+                    break;
                 case 16:
                     calendar.labelList.Add(calendar.Label17);
                     HelpSerialize(Convert.ToInt32(calendar.Label17.Content));
@@ -183,7 +187,7 @@ namespace StardewValley
         private void TvNews(int tvNews)
         {
 
-            var documen1 = File.ReadAllText($"D:/TvNews/Day{tvNews}.txt");
+            var documen1 = File.ReadAllText($"C:/Users/Komputer/source/repos/StardewValley/StardewValley/TvNews/Day{tvNews}.txt");
             MessageBox.Show(documen1);
         }
 
