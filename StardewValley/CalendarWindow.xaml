@@ -18,7 +18,7 @@
                         <Setter Property="HorizontalContentAlignment" Value="Center"></Setter>
                     </Style>
                 </StackPanel.Resources>
-                <Label  HorizontalContentAlignment="Center">Spring</Label>
+                <Label x:Name="SeasonsTime" HorizontalContentAlignment="Center">Spring</Label>
                 <WrapPanel Height="25" Width="700" VerticalAlignment="Top" >
                     <Label  BorderThickness="1,1,0,0">M</Label>
                     <Label  BorderThickness="0,1,0,0">T</Label>
