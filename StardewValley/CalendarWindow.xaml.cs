@@ -21,13 +21,20 @@ namespace StardewValley
     {
         public List<Label> labelList = new List<Label>();
 
+        /*
+         *         Seasons Seasons = new Seasons();
+                 Methods methods = new Methods();
+                    dodać obiekt klasy z metodami
+                 problem z circular dependency !!!!!!!!
+         * 
+         * 
+         * 
+         */
 
         public CalendarWindow()
         {
-        
+
             InitializeComponent();
-
-
             labelList.Add(Label1);
             labelList.Add(Label2);
             labelList.Add(Label3);
@@ -56,6 +63,14 @@ namespace StardewValley
             labelList.Add(Label26);
             labelList.Add(Label27);
             labelList.Add(Label28);
+            //zmiana po 28 dniu na innąwartość 
+            //z main zrobić publiczne metody jak chodzi o wyciągani dnia 
+            //problem z main , przenieść metody do oddzielnej klasy
+
+
+            // SeasonsName();
+
+
 
 
         }
@@ -65,6 +80,7 @@ namespace StardewValley
             e.Cancel = true;
             Hide();
         }
+
     }
 }
 

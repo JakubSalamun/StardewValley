@@ -7,7 +7,11 @@
         mc:Ignorable="d"
         Title="CalendarWindow" Height="450" Width="800" Closing="Window_Closing">
     <Grid>
-        <StackPanel>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="351*"/>
+            <ColumnDefinition Width="49*"/>
+        </Grid.ColumnDefinitions>
+        <StackPanel Grid.ColumnSpan="2">
 
 
             <StackPanel>
@@ -19,7 +23,7 @@
                         <Setter Property="HorizontalContentAlignment" Value="Center"></Setter>
                     </Style>
                 </StackPanel.Resources>
-                <Label x:Name="SeasonsTime" HorizontalContentAlignment="Center" Content="{Binding Path=PartOfSeasons}"></Label>
+                <Label x:Name="SeasonsTime" HorizontalContentAlignment="Center" Content="{Binding}" MinWidth="200"></Label>
                 <WrapPanel Height="25" Width="700" VerticalAlignment="Top" >
                     <Label  BorderThickness="1,1,0,0">M</Label>
                     <Label  BorderThickness="0,1,0,0">T</Label>
