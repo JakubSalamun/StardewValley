@@ -41,34 +41,7 @@ namespace StardewValley
         private void Calendar_Click(object sender, RoutedEventArgs e)
         {
 
-            //*************************
-            //przerobić IF z daniem po zmianie sezonu
-         
-
-            //if (help.seasonsName == "Spring" && help.seasonsDay == 29)
-            //{
-            //    var serializationSummer= help.seasonsName = (calendar.DataContext= "Summer").ToString();
-            //    var serializationSummerDay =help.seasonsDay = 1;
-            //    methods.HelpSerialize(serializationSummerDay, serializationSummer);
-            //}
-            //if (help.seasonsName == "Summer" && help.seasonsDay == 29)
-            //{
-            //    var serializationFall = help.seasonsName = (calendar.DataContext = "Fall").ToString();
-            //    var serializationFallDay = help.seasonsDay = 1;
-            //    methods.HelpSerialize(serializationFallDay, serializationFall);
-            //}
-            //if (help.seasonsName == "Fall" && help.seasonsDay == 29)
-            //{
-            //    var serializationWinter = help.seasonsName = (calendar.DataContext = "Winter").ToString();
-            //    var serializationWinterDay = help.seasonsDay = 1;
-            //    methods.HelpSerialize(serializationWinterDay, serializationWinter);
-            //}
-            //if (help.seasonsName == "Winter" && help.seasonsDay == 29)
-            //{
-            //    var serializationSpring = help.seasonsName = (calendar.DataContext = "Spring").ToString();
-            //    var serializationSpringDay = help.seasonsDay = 1;
-            //    methods.HelpSerialize(serializationSpringDay, serializationSpring);
-            //}
+      
 
             methods.HelpSezons();
             var help = methods.HelpDeserialize();
